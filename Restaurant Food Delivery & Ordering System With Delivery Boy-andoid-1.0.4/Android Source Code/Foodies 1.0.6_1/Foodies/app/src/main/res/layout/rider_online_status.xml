@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.percent.PercentRelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:id="@+id/tool_bar_div"
+        android:background="@color/colorPrimaryDark"
+        android:layout_height="55dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Online Status"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/order_title_tv"
+            android:textSize="15sp"/>
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/back_icon"
+            android:background="@android:color/transparent"
+            android:text="Cancel"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/close"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorWhite"/>
+
+    </android.support.percent.PercentRelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tool_bar_div"
+        android:padding="100dp"
+        android:background="@color/colorBG">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/text_switch_heading"
+            android:textColor="@color/or_color_name"
+            android:textAlignment="center"
+            android:id="@+id/tv1"
+            android:textSize="14sp"
+            />
+
+        <ImageView
+            android:layout_width="85dp"
+            android:layout_height="45dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tv1"
+            android:id="@+id/switch_btn"
+            android:src="@drawable/switch_btn"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/switch_btn"
+            android:textAlignment="center"
+            android:id="@+id/tv2"
+            android:textColor="@color/or_color_name"
+            android:text="@string/text_switch_btn"
+            />
+
+
+        <ImageView
+            android:layout_width="85dp"
+            android:layout_height="45dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tv2"
+            android:id="@+id/mobile_btn"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/payment_alert"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/mobile_btn"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/or_color_name"
+            android:text="@string/text_switch_mobile"
+            />
+
+
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/search_background"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="Online"
+            android:textSize="15sp"
+            android:textColor="@color/black"/>
+
+        <android.support.v7.widget.SwitchCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:id="@+id/on_line_switch"/>
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/pb_online_status"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:layout_height="wrap_content" >
+    </ProgressBar>
+
+
+</RelativeLayout>

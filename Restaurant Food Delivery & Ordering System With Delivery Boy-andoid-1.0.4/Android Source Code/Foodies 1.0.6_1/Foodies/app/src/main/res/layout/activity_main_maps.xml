@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_lay"
+    android:background="@android:color/white"
+    tools:context="com.dinosoftlabs.foodies.android.GoogleMapWork.MapsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.percent.PercentRelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimaryDark"
+            android:layout_height="55dp"
+            android:id="@+id/toolbar_add_address">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/location"
+                android:textColor="@color/colorWhite"
+                android:id="@+id/title_city_tv"
+                android:textSize="15sp"/>
+
+            <ImageView
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/close"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:id="@+id/close_country"
+                />
+
+        </android.support.percent.PercentRelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_below="@+id/toolbar_add_address"
+            android:id="@+id/current_address_div">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginLeft="15dp"
+                android:id="@+id/profile_img"
+                android:src="@drawable/location_img"
+                android:layout_centerVertical="true"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/profile_img"
+                android:layout_marginLeft="10dp"
+                android:textSize="13sp"
+                android:text="Kalma Chowk, Lahore"
+                android:textColor="@color/black"
+                android:layout_toLeftOf="@+id/arrow"
+                android:id="@+id/current_text_tv"
+                android:lines="2"
+                android:layout_marginRight="10dp"
+                android:textStyle="normal"
+
+                />
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:id="@+id/arrow"
+                android:src="@drawable/right_arrow"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorEditTextBG"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/current_address_div"
+            android:layout_above="@+id/save_loc_div">
+
+
+
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                tools:context=".GoogleMapWork.MapsActivity" />
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/marker_location"/>
+
+        </RelativeLayout>
+
+
+        <android.support.percent.PercentRelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimaryDark"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/save_loc_div">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Save Location"
+                android:textColor="@color/colorWhite"
+                android:textSize="15sp"/>
+
+        </android.support.percent.PercentRelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

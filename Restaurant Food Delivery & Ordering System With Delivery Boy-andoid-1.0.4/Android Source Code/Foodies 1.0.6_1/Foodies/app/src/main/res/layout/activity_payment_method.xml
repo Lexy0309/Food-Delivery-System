@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBG"
+    tools:context="com.dinosoftlabs.foodies.android.ActivitiesAndFragments.PaymentMethodActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/select_payment_method_layout">
+
+    <android.support.percent.PercentRelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:layout_height="55dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/payment_method"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/title_city_tv"
+            android:textSize="15sp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cancle_payment_method_btn"
+            android:background="@android:color/transparent"
+            android:text="Cancel"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorWhite"/>
+
+    </android.support.percent.PercentRelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/toolbar_sign_in"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select_payment_method"
+            android:textColor="@color/black"
+            android:paddingLeft="15dp"
+            android:layout_centerVertical="true"/>
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="1dp"
+           android:background="@color/colorEditTextBG"
+           android:layout_alignParentBottom="true"
+           />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:paddingLeft="15dp"
+        android:layout_below="@+id/toolbar_sign_in"
+        android:layout_marginTop="1dp"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_payment_method"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="1dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:background="@color/colorWhite"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cash_on_delivery"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"/>
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/cash_on_delivery"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:background="@color/colorWhite"
+        android:layout_marginTop="1dp"
+        android:id="@+id/add_payment_method_div"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_payment_method"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"/>
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="18dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/discover"
+            android:src="@drawable/discover"
+            />
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="18dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="3dp"
+            android:id="@+id/visa"
+            android:layout_toLeftOf="@+id/discover"
+            android:src="@drawable/visa"
+            />
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="18dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="3dp"
+            android:id="@+id/master"
+            android:layout_toLeftOf="@+id/visa"
+
+            android:src="@drawable/master_card"
+            />
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="18dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/master"
+            android:layout_marginRight="3dp"
+            android:id="@+id/american"
+            android:src="@drawable/american"
+            />
+
+    </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:id="@+id/add_card_detail_layout">
+
+    <include layout="@layout/add_credit_card_detail"></include>
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

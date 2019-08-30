@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:id="@+id/add_decline_main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <android.support.percent.PercentRelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:id="@+id/tool_bar_div"
+        android:background="@color/colorPrimaryDark"
+        android:layout_height="55dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Add Decline Reason"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/accept_decline_title_tv"
+            android:textSize="15sp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingRight="50dp"
+            android:id="@+id/back_icon"
+            android:background="@android:color/transparent"
+            android:text="Cancel"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/back_icon"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorWhite"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@color/transparent"
+            android:text="Done"
+            android:id="@+id/btn_done"
+            android:textColor="@color/colorWhite"/>
+
+    </android.support.percent.PercentRelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/colorBG">
+
+        </RelativeLayout>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/edit_text_border"
+            android:id="@+id/ed_message"
+            android:imeOptions="actionDone"
+            android:hint="Type here"
+            android:textAlignment="textStart"
+            android:gravity="top"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:textSize="14sp"/>
+
+
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/pb_acc_dec"
+        android:visibility="gone"/>
+
+
+</FrameLayout>

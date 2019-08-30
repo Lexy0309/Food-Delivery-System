@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title_name_child"
+        android:textSize="14sp"
+        android:text="Options"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_name_child"
+        android:id="@+id/sub_title_name_child"
+        android:layout_marginTop="2dp"
+        android:textSize="10sp"
+        android:lines="2"
+        android:textColor="@color/colorDeal"
+        android:text="Office Time"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="$15"
+        android:id="@+id/price_tv"
+        android:textSize="14sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="Out of order"
+        android:visibility="gone"
+        android:id="@+id/order_status_tv"
+        android:textSize="12sp"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorEditTextBG"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>

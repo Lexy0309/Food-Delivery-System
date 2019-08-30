@@ -1,0 +1,128 @@
+﻿<resources>
+    <string name="app_name">Foodies</string>
+    <string name="login">Login</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_up_fb">SIGN UP WITH FACEBOOK</string>
+    <string name="sign_up_google">SIGN UP WITH GOOGLE</string>
+    <string name="change_password">Change Password</string>
+    <string name="verification">Verification</string>
+    <string name="conformation_desc">Please confirm your country code and enter your phone number</string>
+    <string name="confirm">Confirm</string>
+    <string name="sms_desc">We sent you an access code via sms for mobile number verification</string>
+    <string name="enter_code">Enter code here</string>
+    <string name="history">History</string>
+    <string name="deals">Deals</string>
+    <string name="account">Account</string>
+    <string name="restaurant">Restaurant</string>
+    <string name="order">Order</string>
+
+       <string name="facebook_app_id" translatable="false">----Facebook app id---</string>
+    <string name="fb_login_protocol_scheme" translatable="false">----fb(Facebook id)---</string>
+
+    <string name="google_api_client_id">gmail_login_client_id_for_debug</string>
+    <string name="google_gmail_release">gmail_login_client_id_for_release</string>
+
+    <string name="google_api_realsekey">Google Map Api release Ker</string>
+    <string name="google_api_debug">Google Map Api Debug Key</string>
+
+    <string name="key_for_places">Google api release or debug key</string>
+
+
+    <string name="default_notification_channel_id">channel-01</string>
+    <string name="page_1">Page 1</string>
+    <string name="page_2">Page 2</string>
+    <string name="page_3">Page 3</string>
+    <string name="about">This is about Restaurant Description,Replace it with original one.</string>
+    <string name="payment_method">Select Payment Method</string>
+    <string name="select_payment_method">SELECT PAYMENT METHOD</string>
+    <string name="add_payment_method">ADD PAYMENT METHOD</string>
+    <string name="cash_on_delivery">Cash on Delivery</string>
+    <string name="save">Save</string>
+    <string name="cancle">Cancle</string>
+    <string name="add_payment">Add Payment Method</string>
+    <string name="card_hint">Card Number</string>
+    <string name="billing_address_hint">Billing Address</string>
+    <string name="city_hint">City</string>
+    <string name="state_hint">State</string>
+    <string name="zip_hint">Zip</string>
+    <string name="card_name_hint">Name On Card</string>
+    <string name="cvc_hint">CVV</string>
+    <string name="date_hint">Validity (09/21)</string>
+    <string name="add_new_address">Add new Address</string>
+    <string name="add_address">Add Delivery Address</string>
+    <string name="house_hint">Street Address</string>
+    <string name="country_hint">Country</string>
+    <string name="add_loc">Add Location</string>
+    <string name="inst_hint">Instructions</string>
+    <string name="title_activity_maps">Map</string>
+
+
+    <string name="hello_ted">Hello Ted</string>
+    <string name="order_now">Order Now</string>
+    <string name="check_out">Check Out</string>
+    <string name="show_restaurant">Show Restaurants</string>
+    <string name="welcome_txt">Welcome! Where should we deliver to?</string>
+    <string name="edit_account">Edit Account</string>
+    <string name="recover_pass">Recover Password</string>
+    <string name="recover">Recover</string>
+    <string name="pending_jobs">PENDING JOBS</string>
+    <string name="current_jobs">CURRENT JOBS</string>
+    <string name="job">Jobs</string>
+    <string name="profile">Profile</string>
+    <string name="today_job">Today\'s Jobs</string>
+    <string name="weekly_earning">Weekly Earnings</string>
+    <string name="schedule">Schedule</string>
+    <string name="change_pass">Change Password</string>
+    <string name="log_out">Logout</string>
+    <string name="help">App Help</string>
+    <string name="rider">Rider</string>
+    <string name="availability">Availability</string>
+    <string name="cancel">Cancel</string>
+
+    /// All Edit Text
+
+    <string name="email_hint"><font size="14">Jhon@gmail.com</font></string>
+    <string name="password_hint"><font size="14">At least 6 character</font></string>
+    <string name="f_name"><font size="14">John</font></string>
+    <string name="l_name"><font size="14">Smith</font></string>
+    <string name="login_with_fb">Login with facebook</string>
+    <string name="login_with_google">Login with google</string>
+    <string name="minimum_housr_str">Minimum shift should be two hours!</string>
+    <string name="location">Location</string>
+    <string name="canada_lat_lomg">31.4904023 , 74.2906989</string>
+
+
+    <string name="notification_add_to_cart_button">Like</string>
+    <string name="group_name">Group 1</string>
+    <string name="notifications_admin_channel_name">Global channel</string>
+    <string name="notifications_admin_channel_description">Notifications sent from the app admin</string>
+
+
+    <string name="text_switch_heading">Switch the Check-in button to start your shift</string>
+    <string name="text_switch_btn">Our staff will see that you are checked-in or online which will help them assign you orders and help you to earn more
+</string>
+
+    <string name="text_switch_mobile">You will remain checked-in until you check-out by switching below button</string>
+    <string name="deal_content">Sorry. This restaurant doesn’t offer any deal at this moment.</string>
+    <string name="privacy_policy">Privacy Policy</string>
+
+    <!--   <string name="admin_contact_number">+923102292129</string>-->
+    <string name="admin_contact_number">+921111111111</string>
+
+    <string name="no_deal_text">Sorry. This restaurant doesn’t offer any deal at this moment.</string>
+
+    <!--<string name="uan_txt">UAN (03 111 444 245)</string>
+    -->
+    <string name="uan_txt">UAN (00 111 111 111)</string>
+
+    <!--<string name="uan">03111444245</string>
+       -->
+    <string name="uan">00111111111</string>
+
+    <string name="review">Review</string>
+    <string name="rest_not_open">Currently restaurant is not open.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/restaurant_row_main"
+    android:layout_margin="5dp"
+    android:elevation="2dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <ImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image_restaurant"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/ic_launcher_background"
+            android:scaleType="centerCrop"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Options"
+                    android:textSize="14sp"
+                    android:layout_toLeftOf="@+id/favorite_icon"
+                    app:layout_marginTopPercent = "10%"
+                    app:layout_marginLeftPercent = "3%"
+                    android:id="@+id/title_restaurants"
+                    android:layout_toRightOf="@+id/profile_image_restaurant"
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Options"
+                    android:textSize="12sp"
+                    android:id="@+id/salogon_restaurants"
+                    android:layout_below="@+id/title_restaurants"
+                    app:layout_marginLeftPercent = "3%"
+                    android:layout_marginTop="2dp"
+                    android:maxLines="1"
+                    android:layout_toRightOf="@+id/profile_image_restaurant"
+                    android:layout_toLeftOf="@+id/favorite_icon"
+                    />
+
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@+id/ruleRatingBar"
+                    android:id="@+id/item_time_tv"
+                    android:singleLine="true"
+                    android:layout_toLeftOf="@+id/baked_icon"
+                    android:layout_toRightOf="@+id/profile_image_restaurant"
+                    android:text="$30"
+                    android:layout_marginTop="3dp"
+                    android:textSize="12sp"
+
+                    />
+
+            </LinearLayout>
+
+
+            <RatingBar
+                android:id="@+id/ruleRatingBar"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:stepSize="0.5"
+                 app:layout_marginLeftPercent = "3%"
+                android:layout_marginTop="2dp"
+                android:progressTint="@color/ratingBar"
+                android:backgroundTint="@color/ratingBar"
+                android:layout_alignParentRight="true"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_height="40dp"
+        android:layout_width="40dp"
+        android:src="@drawable/featured"
+        android:id="@+id/featured"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="40dp"
+        app:layout_marginTopPercent = "73%"
+        android:id="@+id/baked_time_tv"
+        android:layout_alignParentRight="true"
+        android:text="$30"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:background="@color/colorWhite"
+        android:padding="5dp"
+        android:textSize="12sp"
+
+        />
+
+
+</RelativeLayout>
+

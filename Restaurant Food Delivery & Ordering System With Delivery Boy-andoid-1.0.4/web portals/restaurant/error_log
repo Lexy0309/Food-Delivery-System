@@ -1,0 +1,8 @@
+[07-Feb-2019 11:57:55 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/bring/public_html/foodies/restaurant/hotel_order.php on line 796
+[07-Feb-2019 11:57:58 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/bring/public_html/foodies/restaurant/earning.php on line 95
+[07-Feb-2019 13:02:43 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/bring/public_html/foodies/restaurant/earning.php on line 95
+[07-Feb-2019 13:05:47 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/bring/public_html/foodies/restaurant/earning.php on line 95
+[07-Feb-2019 13:05:50 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/bring/public_html/foodies/restaurant/hotel_order.php on line 796
+[07-Feb-2019 20:26:13 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/bring/public_html/foodies/restaurant/hotel_order.php on line 796
+[07-Feb-2019 20:57:44 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/bring/public_html/foodies/restaurant/earning.php on line 95
+[21-Feb-2019 11:17:34 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/bring/public_html/foodies/restaurant/earning.php on line 95

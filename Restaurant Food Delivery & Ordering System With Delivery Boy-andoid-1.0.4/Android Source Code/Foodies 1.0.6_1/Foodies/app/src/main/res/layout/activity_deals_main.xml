@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:id="@+id/deals_main_container">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ActivitiesAndFragments.DealsMainActivity">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/deals_item_div"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/colorPrimaryDark">
+
+
+            <TextView
+                android:id="@+id/deals_menu_item_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/hello_ted"
+                android:textColor="@color/colorWhite"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/back_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingRight="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/back_icon"
+              />
+
+            <ImageView
+                android:id="@+id/clos_menu_deals_detail"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/close"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite"
+            android:layout_above="@+id/inc_dec_div"
+            android:layout_below="@+id/deals_item_div">
+
+            <RelativeLayout
+                android:id="@+id/deals_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_heightPercent="50%">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/unknown_img"
+                    android:id="@+id/deals_bg_img"
+                    />
+
+            </RelativeLayout>
+
+            <ScrollView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/deals_bg">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_height="40dp"
+                android:layout_width="match_parent"
+                android:id="@+id/deals_total_div"
+                android:background="@color/colorWhite">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/deal_name_tv"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15sp"
+                    android:text="Hello Ted"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/deal_amount_tv"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15sp"
+                    android:text="$20"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorRed"
+                    android:layout_alignParentRight="true"
+                    />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_height="40dp"
+                android:layout_width="match_parent"
+                android:id="@+id/deals_name_div"
+                android:background="@color/colorWhite"
+                android:layout_below="@+id/deals_total_div">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/deal_hotel_name_tv"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15sp"
+                    android:text="sariyas"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    />
+
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:background="@color/colorWhite"
+                android:id="@+id/deals_desc_div"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_below="@+id/deals_name_div">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/deal_desc_tv"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15sp"
+                    android:text="sariyas"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    />
+
+            </RelativeLayout>
+
+                </RelativeLayout>
+
+            </ScrollView>
+        </android.support.percent.PercentRelativeLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:weightSum="3"
+            android:id="@+id/inc_dec_div"
+            android:layout_above="@+id/deals_order_now_div"
+            android:background="@drawable/round_shape_btn_add_to_cart">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="-"
+                android:id="@+id/minus_btn"
+                android:textSize="16dp"
+                android:background="@android:color/transparent"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="1"
+                android:textColor="@color/black"
+                android:gravity="center_vertical|center_horizontal"
+                android:textSize="16dp"
+                android:id="@+id/inc_dec_tv"
+                android:textStyle="bold"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="+"
+                android:id="@+id/plus_btn"
+                android:background="@android:color/transparent"
+                android:textSize="16dp"
+                android:textStyle="bold"/>
+
+
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/deals_order_now_div"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="7dp"
+            android:background="@drawable/round_shape_btn_login">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/order_now"
+                android:textColor="@color/colorWhite" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/deals_report_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <include layout="@layout/deals_report_layout" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

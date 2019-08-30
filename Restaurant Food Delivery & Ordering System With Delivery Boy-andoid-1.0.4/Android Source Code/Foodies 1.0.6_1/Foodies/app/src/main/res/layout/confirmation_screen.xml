@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/confirmation_main_screen"
+        android:background="@color/colorWhite">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:layout_height="55dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingRight="50dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back_icon"
+            android:id="@+id/back_icon_confirm"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:fontFamily="assets/verdana.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/confirm"
+            android:textSize="15sp"
+            android:id="@+id/confirmation_title"
+            android:layout_centerInParent="true"
+            android:textColor="@color/colorWhite"
+            android:gravity="center_horizontal|center_vertical" />
+
+    </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="2"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.2"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.9">
+
+                    <android.support.percent.PercentRelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                     <ImageView
+                         android:layout_gravity="bottom"
+                         android:layout_height="match_parent"
+                         android:layout_width="match_parent"
+                         android:src="@drawable/sms"
+                         android:layout_alignParentBottom="true"
+                         android:layout_centerHorizontal="true"
+                         app:layout_widthPercent="70%"
+                         app:layout_heightPercent="70%"
+
+                         />
+
+
+
+                    </android.support.percent.PercentRelativeLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.1">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="25dp"
+                        android:paddingRight="25dp">
+
+
+                        <TextView
+                            android:fontFamily="assets/verdana.ttf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/sms_desc"
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/sms_tv"
+                            android:textColor="#000"/>
+
+                        <TextView
+                            android:fontFamily="assets/verdana.ttf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/enter_code"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@+id/sms_tv"
+                            android:layout_centerHorizontal="true"
+
+
+                            />
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8"
+                android:weightSum="3"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:weightSum="4"
+                    android:id="@+id/div2"
+                    android:paddingLeft="60dp"
+                    android:paddingRight="60dp">
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.02"
+                        android:textSize="45dp"
+                        android:maxLength="1"
+                        android:textStyle="bold"
+                        android:inputType="number"
+                        android:paddingLeft="12dp"
+                        android:background="@drawable/edit_text_bg"
+                        android:id="@+id/edit_text1"/>
+                        <requestFocus />
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="3dp"
+                        android:id="@+id/edit_text2"
+                        android:textSize="45dp"
+                        android:maxLength="1"
+                        android:textStyle="bold"
+                        android:inputType="number"
+                        android:paddingLeft="12dp"
+                        android:background="@drawable/edit_text_bg"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="3dp"
+                        android:id="@+id/edit_text3"
+                        android:textSize="45dp"
+                        android:maxLength="1"
+                        android:textStyle="bold"
+                        android:inputType="number"
+                        android:paddingLeft="12dp"
+                        android:background="@drawable/edit_text_bg"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="3dp"
+                        android:id="@+id/edit_text4"
+                        android:maxLength="1"
+                        android:imeOptions="actionDone"
+                        android:textSize="45dp"
+                        android:inputType="number"
+                        android:textStyle="bold"
+                        android:paddingLeft="12dp"
+                        android:background="@drawable/edit_text_bg"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <android.support.percent.PercentRelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <at.markushi.ui.CircleButton
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:layout_widthPercent="40%"
+                            app:layout_heightPercent="40%"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/arrow"
+                            android:background="@null"
+                            android:padding="30dp"
+                            android:layout_marginTop="8dp"
+                            app:cb_color="@color/colorRed"
+                            android:id="@+id/confirm_btn"
+
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@+id/confirm_btn"
+                            android:id="@+id/resend_btn"
+                            android:layout_marginTop="8dp"
+                            android:text="Resend Code?"
+                            android:fontFamily="assets/verdana.ttf"
+                            android:textColor="@color/colorRed"
+                            android:textSize="14sp"/>
+
+
+                    </android.support.percent.PercentRelativeLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

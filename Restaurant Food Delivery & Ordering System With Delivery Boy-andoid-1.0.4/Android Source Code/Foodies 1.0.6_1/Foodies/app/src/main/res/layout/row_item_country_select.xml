@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:id="@+id/main_view">
+
+
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/flag_image"
+        android:layout_centerVertical="true"
+        android:src="@drawable/unknown_deal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:id="@+id/country_name_tv"
+        android:layout_toRightOf="@+id/flag_image"
+        android:layout_marginLeft="10dp"
+        android:text="Pakistan"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorEditTextBG"
+        android:layout_alignParentBottom="true"
+        />
+
+
+
+</RelativeLayout>

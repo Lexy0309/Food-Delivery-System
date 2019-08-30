@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/address_detail_container">
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite">
+
+
+    <android.support.percent.PercentRelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:layout_height="55dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/add_address"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/title_city_tv"
+            android:textSize="15sp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cancle_add_address_btn"
+            android:background="@android:color/transparent"
+            android:text="@string/cancle"
+            android:textAllCaps="false"
+            android:textSize="14sp"
+            android:fontFamily="@font/verdana"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorWhite"/>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/save_address_btn"
+            android:background="@android:color/transparent"
+            android:text="@string/save"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textAllCaps="false"
+            android:textSize="14sp"
+            android:fontFamily="@font/verdana"
+            android:textColor="@color/colorWhite"/>
+
+        <ImageView
+            android:layout_height="match_parent"
+            android:paddingRight="50dp"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/back_icon"
+            android:visibility="gone"
+            android:id="@+id/back_icon"/>
+
+    </android.support.percent.PercentRelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_sign_in">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:paddingLeft="15dp"
+        android:background="@color/colorBG"
+
+        >
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="1dp"
+        android:layout_below="@+id/toolbar_sign_in"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@null"
+            android:paddingLeft="15dp"
+            android:textSize="14sp"
+            android:inputType="text"
+            android:id="@+id/st_address"
+            android:imeOptions="actionNext"
+            android:hint="@string/house_hint"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorEditTextBG"
+            />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:weightSum="2"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="15dp"
+                android:background="@null"
+                android:textSize="14sp"
+                android:inputType="text"
+                android:id="@+id/add_city"
+                android:imeOptions="actionNext"
+                android:hint="@string/city_hint"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="5dp"
+                android:background="@color/colorEditTextBG"
+                />
+
+        </RelativeLayout>
+
+      <!--  <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:textSize="14sp"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:id="@+id/add_state"
+                android:hint="@string/state_hint"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="2dp"
+                android:background="@color/colorEditTextBG"
+                />
+
+        </RelativeLayout>-->
+
+
+    </LinearLayout>
+
+   <!-- <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="1dp"
+        android:layout_below="@+id/toolbar_sign_in"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@null"
+            android:paddingLeft="15dp"
+            android:textSize="14sp"
+            android:inputType="number"
+            android:id="@+id/add_zip"
+            android:imeOptions="actionNext"
+            android:hint="@string/zip_hint"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorEditTextBG"
+            />
+
+
+    </RelativeLayout>-->
+
+
+ <!--   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:weightSum="2"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/country_div">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="15dp"
+                android:background="@null"
+                android:id="@+id/add_country"
+                android:textSize="14sp"
+                android:text="Country"
+                android:gravity="center_vertical"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorEditTextBG"
+                android:layout_marginRight="5dp"
+                />
+
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>-->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/add_loc_div">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:id="@+id/add_loc_tv"
+            android:layout_centerVertical="true"
+            android:paddingLeft="15dp"
+            android:text="@string/add_loc"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorEditTextBG"
+            android:layout_marginLeft="2dp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="1dp"
+        android:layout_below="@+id/toolbar_sign_in"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@null"
+            android:paddingLeft="15dp"
+            android:textSize="14sp"
+            android:inputType="text"
+            android:imeOptions="actionDone"
+            android:id="@+id/add_instructions"
+            android:hint="@string/inst_hint"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorEditTextBG"
+            />
+
+
+    </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/transparent_layer"
+        android:visibility="gone"
+        android:background="@color/transparent_tint">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:id="@+id/progressDialog"
+        android:visibility="gone"
+        android:background="@drawable/round_shape_dialog_white"
+        >
+        <com.gmail.samehadar.iosdialog.CamomileSpinner
+            android:id="@+id/pbHeaderProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            app:spinnerColor="@color/colorRed"
+            />
+    </RelativeLayout>
+
+
+</FrameLayout>

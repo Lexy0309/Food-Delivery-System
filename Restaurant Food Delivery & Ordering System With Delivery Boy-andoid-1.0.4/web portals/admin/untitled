@@ -1,0 +1,8 @@
+
+$ii="0";
+foreach($data as $str => $value)
+{
+	$number_int=$ii++;
+    echo $row[$number_int]['id'];
+     echo '<br>';
+  }

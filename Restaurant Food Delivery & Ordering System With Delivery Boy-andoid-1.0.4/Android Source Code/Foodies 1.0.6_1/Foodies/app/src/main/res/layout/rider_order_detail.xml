@@ -1,0 +1,916 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_container_order_detail"
+    android:background="@color/colorWhite">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/toolbar"
+        android:layout_height="55dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order # 51"
+            android:textSize="15sp"
+            android:id="@+id/rider_jobs_title"
+            android:layout_centerInParent="true"
+            android:textColor="@color/colorWhite"
+           />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingRight="50dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back_icon"
+            android:id="@+id/back_icon"
+            android:layout_marginLeft="5dp"/>
+
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:paddingRight="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/info_img"
+            android:id="@+id/info_icon" />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="65dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            android:text="Sariyas"
+            android:id="@+id/r_hotel_name"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_above="@+id/r_hotel_name"
+            android:textSize="13sp"
+            android:id="@+id/order_number_tv"
+            android:textColor="@color/black"
+            android:text="Order # 10"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@+id/r_hotel_name"
+            android:text="Gulistan Colony FSB"
+            android:id="@+id/hotel_address_tv"
+            android:textSize="13sp"
+            android:layout_toLeftOf="@+id/time_tv"
+            android:layout_alignParentLeft="true"
+            android:singleLine="true"
+            android:textColor="@color/black"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="$276.00"
+            android:id="@+id/r_total_bil_tv"
+            android:textColor="@color/black"
+            android:textSize="13sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_above="@+id/r_total_bil_tv"
+            android:text="Credit Card"
+            android:id="@+id/card_detail_tv"
+            android:textColor="@color/black"
+            android:textSize="13sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="12:16 PM"
+            android:layout_below="@+id/r_total_bil_tv"
+            android:textColor="@color/black"
+            android:id="@+id/time_tv"
+            android:textSize="13sp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorBG"/>
+
+
+
+    </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/colorBG">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="Instructions"
+                    android:textSize="10sp"
+                    android:textColor="@color/or_color_name"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/colorEditTextBG"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/inst_img"
+                    android:src="@drawable/info_img"
+                    android:tint="@color/colorRed"
+                    android:layout_centerVertical="true"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/inst_img"
+                    android:layout_marginLeft="10dp"
+                    android:text="Sariyas"
+                    android:textColor="@color/black"
+                    android:id="@+id/inst_txt"
+                    android:textSize="13sp"
+                    android:textStyle="normal"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/colorEditTextBG"/>
+
+
+            </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/colorBG">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="ORDER HOTEL DETAIL"
+            android:textSize="10sp"
+            android:textColor="@color/or_color_name"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorEditTextBG"/>
+
+    </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/hotel_img"
+                    android:src="@drawable/hotel_img"
+                    android:layout_centerVertical="true"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/hotel_img"
+                    android:layout_marginLeft="10dp"
+                    android:text="Sariyas"
+                    android:textColor="@color/black"
+                    android:id="@+id/hotel_name2"
+                    android:textSize="13sp"
+                    android:textStyle="normal"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/colorEditTextBG"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:id="@+id/restaurant_address_div">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/location_img"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/location_img"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/location_img"
+                    android:layout_marginLeft="10dp"
+                    android:text="Rastaurant Address"
+                    android:textColor="@color/black"
+                    android:id="@+id/rest_address_tv"
+                    android:textSize="13sp"
+                    android:textStyle="normal"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/colorEditTextBG"/>
+
+            </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:id="@+id/hotel_call_div">
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/call_img"
+            android:layout_centerVertical="true"
+            android:src="@drawable/phone_img"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/call_img"
+            android:layout_marginLeft="10dp"
+            android:text="+923348860100"
+            android:textColor="@color/black"
+            android:id="@+id/rest_phone_number"
+            android:textSize="13sp"
+            android:textStyle="normal"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorEditTextBG"/>
+
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/colorBG"
+       >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="ORDER USER DETAIL"
+            android:textSize="10sp"
+            android:textColor="@color/or_color_name"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorEditTextBG"/>
+
+    </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/user_img"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/profile"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/user_img"
+                    android:layout_marginLeft="10dp"
+                    android:text="Nabeel"
+                    android:textColor="@color/black"
+                    android:id="@+id/user_name"
+                    android:textSize="13sp"
+                    android:textStyle="normal"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/colorEditTextBG"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:id="@+id/user_location_div">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/log_out_img"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/location_img"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/log_out_img"
+                    android:layout_marginLeft="10dp"
+                    android:text="User Address"
+                    android:textColor="@color/black"
+                    android:id="@+id/user_address"
+                    android:textSize="13sp"
+                    android:textStyle="normal"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/colorEditTextBG"/>
+
+
+            </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:id="@+id/user_call_div">
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/help_img"
+            android:layout_centerVertical="true"
+            android:src="@drawable/phone_img"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/help_img"
+            android:layout_marginLeft="10dp"
+            android:text="+923167418077"
+            android:textColor="@color/black"
+            android:id="@+id/user_phone_number"
+            android:textSize="13sp"
+            android:textStyle="normal"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorEditTextBG"/>
+
+
+    </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/inst_img2"
+                    android:src="@drawable/info_img"
+                    android:tint="@color/colorRed"
+                    android:layout_centerVertical="true"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/inst_img2"
+                    android:layout_marginLeft="10dp"
+                    android:text="Sariyas"
+                    android:textColor="@color/black"
+                    android:id="@+id/inst_txt_user"
+                    android:textSize="13sp"
+                    android:textStyle="normal"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/colorEditTextBG"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/colorBG">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="ORDER PAYMENT DETAIL"
+                    android:textSize="10sp"
+                    android:textColor="@color/or_color_name"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/colorEditTextBG"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/help_img1"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/phone_img"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Tax"
+                    android:textColor="@color/black"
+                    android:id="@+id/tax_tv"
+                    android:textSize="13sp"
+                    android:layout_toRightOf="@+id/help_img1"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="normal"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:textColor="@color/black"
+                    android:id="@+id/total_tax_tv"
+                    android:textSize="13sp"
+                    android:textStyle="normal"
+                    android:text="$0.00"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/colorEditTextBG"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/deliver_img"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/delivery_img"
+
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/deliver_img"
+                    android:layout_marginLeft="10dp"
+                    android:text="Delivery Fee"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:textStyle="normal"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:id="@+id/delivery_fee_tv"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:textStyle="normal"
+                    android:text="$0.00"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/colorEditTextBG"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/help_img3"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/payment_img"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="Rider Tip"
+                    android:layout_toRightOf="@+id/help_img3"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:textStyle="normal"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:id="@+id/tip_tv"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+
+                    android:textStyle="normal"
+                    android:text="$276.00"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/colorEditTextBG"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/help_img4"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/sub_total_img"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="Subtotal"
+                    android:layout_toRightOf="@+id/help_img4"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:textStyle="normal"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:id="@+id/sub_total_payment_tv"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:textStyle="normal"
+                    android:text="$276.00"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/colorEditTextBG"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/help_img2"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/sub_total_img"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="Total"
+                    android:layout_toRightOf="@+id/help_img2"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:id="@+id/totalText"
+                    android:textStyle="normal"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:id="@+id/total_payment_tv"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:textStyle="normal"
+                    android:text="$276.00"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/colorEditTextBG"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/payment_method_img"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/payment_image"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/payment_method_img"
+                    android:layout_marginLeft="10dp"
+                    android:text="Payment Method"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:textStyle="normal"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:id="@+id/card_tv"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:textStyle="normal"
+                    android:text="Credit Card"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/colorEditTextBG"/>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:id="@+id/pay_to_rest_div">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/payment_method_img3"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/sub_total_img"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/payment_method_img3"
+                    android:layout_marginLeft="10dp"
+                    android:text="Pay To Restaurant"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:textStyle="normal"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:id="@+id/pat_to_rest_tv"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:textStyle="normal"
+                    android:text="Credit Card"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/colorEditTextBG"/>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/confirm_btn"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            android:background="@drawable/round_shape_btn_login"
+            android:text="On My Way to Hotel"
+            android:textColor="@color/colorWhite"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/transparent_layer"
+        android:visibility="gone"
+        android:background="@color/transparent_tint">
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:id="@+id/progressDialog"
+        android:visibility="gone"
+        android:background="@drawable/round_shape_dialog_white"
+        >
+        <com.gmail.samehadar.iosdialog.CamomileSpinner
+            android:id="@+id/customProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            app:spinnerColor="@color/colorRed"
+            />
+    </RelativeLayout>
+
+</FrameLayout>

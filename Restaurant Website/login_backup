@@ -1,0 +1,315 @@
+<?php 
+	require_once("config.php");
+	if(!isset($_SESSION['id'])) {
+    
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TICOTOGO</title>
+
+    <!-- CSS -->
+	 <link rel="shortcut icon" href="images/ticotogo.ico"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontawesome-all.css">
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.css">
+	<!-- <link rel="stylesheet" href="css/dashboard.css"> -->
+	<link rel="stylesheet" href="css/core.css">
+	<link rel="stylesheet" href="css/responsive.css">
+	<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<script src="js/jquery-1.12.4.js"></script> 
+</head>
+
+<script>
+ jQuery(document).ready(function($) {
+    $(".forgetlinka").click(function(){
+	$("#forget").show();
+	$("#page_content_sec").hide();	
+		
+})
+$(".signinform").click(function(){
+	$("#forget").hide();
+	$("#page_content_sec").show();	
+	})
+});
+ </script> 
+ <script>
+  function login(){
+    var email = $('#eml').val();
+    var password = $('#pswd').val();
+    var baseurl = "http://localhost/mobileapp_api/publicSite";
+					$.ajax({
+						url: baseurl + '/login',
+						method: 'POST',
+						dataType: 'json',
+						data: {
+							email: email,
+							password: password
+						},
+						error: function(error)
+						{
+							alert("Something is Wrong!");
+							console.log(email);
+							console.log(password);
+							console.log(error);
+						},
+						success: function(response)
+						{
+							// Login status [success|invalid]
+							var login_status = response.login_status;
+							
+							
+							
+							// We will give some time for the animation to finish, then execute the following procedures	
+							setTimeout(function()
+							{
+								// If login is invalid, we store the 
+								if(login_status == 'invalid')
+								{
+									alert("Email or password incorrect.")
+									neonLogin.resetProgressBar(true);
+								}
+								else
+								if(login_status == 'success')
+								{
+									// Redirect to login page
+									setTimeout(function()
+									{
+										var redirect_url = "localhost";
+										
+										if(response.redirect_url && response.redirect_url.length)
+										{
+											redirect_url = response.redirect_url;
+										}
+										
+										window.location.href = redirect_url;
+									}, 400);
+								}
+								
+							}, 1000);
+						}
+					});
+
+  }
+
+
+</script>
+<script src="js/jquery.validate.min.js"></script> 
+<script>
+    
+    // Wait for the DOM to be ready
+$(function() {
+  // Initialize form validation on the registration form.
+  // It has the name attribute "registration"
+  $("form[name='registration']").validate({
+    // Specify validation rules
+    rules: {
+      // The key name on the left side is the name attribute
+      // of an input field. Validation rules are defined
+      // on the right side
+      pswd: "required",
+     
+	  
+      email: {
+        required: true,
+        // Specify that email should be validated
+        // by the built-in "email" rule
+        email: true
+      },
+	  emailaddr: {
+        required: true,
+        // Specify that email should be validated
+        // by the built-in "email" rule
+        email: true
+      },
+     
+    },
+    // Specify validation error messages
+    messages: {
+      pswd: "Please enter your Password",
+      email: "Please enter a valid email address",
+	 },
+	// Make sure the form is submitted to the destination defined
+    // in the "action" attribute of the form when valid
+    submitHandler: function(form) {
+      form.submit();
+    }
+  });
+  
+  
+   $("form[name='forgetfrm']").validate({
+    // Specify validation rules
+    rules: {
+      // The key name on the left side is the name attribute
+      // of an input field. Validation rules are defined
+      // on the right side
+    
+	  
+      emailaddr: {
+        required: true,
+        // Specify that email should be validated
+        // by the built-in "email" rule
+        email: true
+      },
+	 
+    },
+    // Specify validation error messages
+    messages: {
+       emailaddr: "Please enter a valid email address",
+	 },
+	// Make sure the form is submitted to the destination defined
+    // in the "action" attribute of the form when valid
+    submitHandler: function(form) {
+      form.submit();
+    }
+  });
+  
+});
+    </script>
+    <body class="home">
+<div class="popup_container_login">
+  <div class="login-content"><img src="images/log.png" alt="logo" width="220"> </div>
+  <div id="page_content_sec">
+    <div class="login_form">
+      <div class="right col100 rightside">
+        <div class="header"> Sign Into Your Account </div>
+        <div class="form">
+          <form  id="loginfrm" method="post" novalidate="novalidate" name="registration">
+            <p>
+              <input name="email" id="eml" required="" aria-required="true" type="email">
+              <label alt="Email Address" placeholder="Email Address"></label>
+            </p>
+            <p>
+              <input name="pswd" id="pswd" required="" aria-required="true" type="password">
+              <label alt="Password" placeholder="Password"></label>
+            </p>
+            <!-- <input name="returnlink" value="localhost" type="hidden"> -->
+            <p>
+              <input type="button" onClick = "login()" value = "Login"></input>
+            </p>
+          </form>
+        </div>
+        <div class="footer">Forget your password? <a class="forgetlinka">Forget?</a> </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div id="forget">
+    <div class="login_form">
+      <div class="right col100 rightside">
+        <div class="header"> Forget Password? </div>
+        <div class="form">
+          <form name="forgetfrm" action="#" id="forgetfrm" method="post" novalidate>
+            <p>
+              <input name="emailaddr" id="emailaddr" required aria-required="true" type="email">
+              <label alt="Email Address" placeholder="Email Address"> </label>
+            </p>
+            <p>
+              <button type="submit"  >Recover It</button>
+            </p>
+          </form>
+        </div>
+        <div class="footer"> Already have an account? <a class="signinform">Sign in!</a> </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+</div>
+<script>
+
+</script>
+
+<style>
+.login_form .col100.rightside .form {
+	padding: 40px 20px;
+	padding-bottom: 15px;
+}
+.popup_container_login {
+	position: relative;
+	margin: 8% auto;
+	/* padding: 80px 20px; */
+	background: #fff;
+	box-shadow: 0 0 5px 0 rgba(0,0,0,0.5);
+	border-radius: 5px;
+	max-width: 300px;
+}
+.login_form .col100.rightside .header {
+	position: relative;
+	background: none;
+	border-bottom: 1px solid #dbd9d6;
+	height: 54px;
+	margin: 0;
+	line-height: 54px;
+	text-align: left;
+	font-size: 18px;
+	color: #605d57;
+	padding: 0 20px;
+	text-align: center;
+}
+
+.login-content {
+	text-align: center;
+	padding-top: 20px;
+}
+#forget{ display:none;}
+.login_form .col100.rightside .footer {
+	position: relative;
+	height: 54px;
+	background: #eeede9;
+	border-top: 1px solid #dbd9d6;
+	text-align: center;
+	font-size: 12px;
+	margin: 0;
+	padding: 0 20px;
+	line-height: 54px;
+}
+.signinform {
+	color: #be2c2c;
+	font-weight: bold;
+	cursor:pointer;
+}
+.right.col100.rightside {
+	width: 100%;
+}
+.forgetlinka {
+	font-weight: bold;
+	cursor: pointer;
+}
+.forgetlinka {
+	color: #be2c2c;
+	
+}
+</style>
+</body>
+</html>
+
+
+<?php 
+} 
+else 
+{
+  echo("ssssssssss");
+  @session_destroy();
+  @header("Location:login.php");
+  // echo($_GET['log']);
+	// if(isset($_GET['log'])) 
+	// {
+	// 	if($_GET['log']=="out") 
+	// 	{
+  //     echo($_GET['log']);
+	// 		@session_destroy();
+  //           // @header("Location: index.php");
+	// 	}
+  // }
+  echo($_SESSION['id']);
+    exit();
+	// 
+} 
+
+?>

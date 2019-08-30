@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main_sign_up_div"
+    android:background="@color/colorBG"
+    android:clickable="true"
+    tools:context="com.dinosoftlabs.foodies.android.ActivitiesAndFragments.SingUpActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBG"
+        android:id="@+id/main_sign_up"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimaryDark"
+            android:layout_height="55dp"
+            android:clickable="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingRight="50dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/back_icon"
+                android:id="@+id/back_icon"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:fontFamily="font/verdana.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_up"
+                android:textSize="15sp"
+                android:id="@+id/signup_title"
+                android:layout_centerInParent="true"
+                android:textColor="@color/colorWhite"
+                android:gravity="center_horizontal|center_vertical" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:fontFamily="font/verdana.ttf"
+                    android:id="@+id/tv_fname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@color/colorWhite"
+                    android:gravity="center"
+                    android:text="First Name"
+                    android:paddingLeft="14dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:fontFamily="font/verdana.ttf"
+                    android:id="@+id/ed_fname"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_toRightOf="@+id/tv_fname"
+                    android:background="@color/colorWhite"
+                    android:hint="@string/f_name"
+                    android:textSize="14sp"
+                    android:imeOptions="actionNext"
+                    android:inputType="textWebEmailAddress"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:fontFamily="font/verdana.ttf"
+                    android:id="@+id/tv_lname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_below="@+id/tv_fname"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/colorWhite"
+                    android:gravity="center"
+                    android:text="Last Name"
+                    android:paddingLeft="14dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:fontFamily="font/verdana.ttf"
+                    android:id="@+id/ed_lname"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_below="@+id/ed_fname"
+                    android:layout_marginTop="1dp"
+                    android:layout_toRightOf="@+id/tv_lname"
+                    android:background="@color/colorWhite"
+                    android:hint="@string/l_name"
+                    android:textSize="14sp"
+                    android:imeOptions="actionNext"
+                    android:inputType="textWebEmailAddress"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:fontFamily="font/verdana.ttf"
+                    android:id="@+id/tv_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_below="@+id/ed_lname"
+                    android:background="@color/colorWhite"
+                    android:gravity="center"
+                    android:layout_marginTop="1dp"
+                    android:text="Email"
+
+                    android:paddingLeft="14dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:fontFamily="font/verdana.ttf"
+                    android:id="@+id/ed_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_below="@+id/ed_lname"
+                    android:paddingLeft="10dp"
+                    android:textSize="14sp"
+                    android:inputType="textWebEmailAddress"
+                    android:imeOptions="actionNext"
+                    android:layout_marginTop="1dp"
+                    android:layout_toRightOf="@+id/tv_email"
+                    android:background="@color/colorWhite"
+                    android:hint="@string/email_hint"
+
+                    />
+
+                <TextView
+                    android:fontFamily="font/verdana.ttf"
+                    android:id="@+id/tv_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_below="@+id/tv_email"
+                    android:background="@color/colorWhite"
+                    android:gravity="center"
+                    android:layout_marginTop="1dp"
+                    android:text="Password"
+                    android:textSize="14sp"
+                    android:paddingLeft="14dp"
+                    android:textColor="@color/colorBlack" />
+
+                <EditText
+                    android:fontFamily="font/verdana.ttf"
+                    android:id="@+id/ed_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_below="@+id/ed_email"
+                    android:paddingLeft="10dp"
+                    android:textSize="14sp"
+                    android:layout_marginTop="1dp"
+                    android:inputType="textWebPassword"
+                    android:imeOptions="actionDone"
+                    android:layout_toRightOf="@+id/tv_password"
+                    android:background="@color/colorWhite"
+                    android:hint="@string/password_hint" />
+
+                <Button
+                    android:id="@+id/btn_signup"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/ed_password"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/round_shape_btn_login"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/verdana"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:textStyle="normal"
+                    android:text="@string/sign_up"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/or_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_below="@+id/btn_signup"
+                    android:layout_marginLeft="48dp"
+                    android:layout_marginRight="48dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/or" />
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:layout_below="@+id/or_image">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="16dp"
+                        android:id="@+id/fb_div"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:layout_below="@+id/or_image"
+                        android:background="@drawable/round_shape_btn_fb"
+                        >
+
+                        <com.facebook.login.widget.LoginButton
+                            android:id="@+id/login_button_fb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/btn_fb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:background="@null"
+                            android:text="@string/sign_up_fb"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="13sp"
+                            android:fontFamily="@font/verdana"
+                            android:textStyle="normal" />
+
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:src="@drawable/facebook"
+                            android:layout_centerVertical="true"/>
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="20dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:id="@+id/google_sign_in_div"
+                        android:layout_below="@+id/fb_div"
+                        android:background="@drawable/round_shape_btn_google"
+                        android:layout_marginBottom="20dp"
+                        >
+
+                        <TextView
+                            android:id="@+id/btn_google"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:text="@string/sign_up_google"
+                            android:textSize="13sp"
+                            android:textStyle="normal"
+                            android:fontFamily="@font/verdana"
+                            android:layout_centerInParent="true"
+                            android:textColor="@color/colorWhite" />
+
+                        <ImageView
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:src="@drawable/google"
+                            android:layout_centerVertical="true"
+                            />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/verification_screen"
+        android:visibility="gone">
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/verification_screen" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/transparent_layer"
+        android:visibility="gone"
+        android:background="@color/transparent_tint">
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:id="@+id/progressDialog"
+        android:visibility="gone"
+        android:background="@drawable/round_shape_dialog_white"
+        >
+        <com.gmail.samehadar.iosdialog.CamomileSpinner
+            android:id="@+id/signUpProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            app:spinnerColor="@color/colorRed"
+            app:clockwise="true"
+
+            />
+    </RelativeLayout>
+
+</FrameLayout>

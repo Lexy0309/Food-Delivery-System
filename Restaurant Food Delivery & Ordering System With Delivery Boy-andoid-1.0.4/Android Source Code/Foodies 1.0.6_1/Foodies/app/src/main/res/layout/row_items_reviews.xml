@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    xmlns:hedgehog="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="8dp">
+    <RatingBar
+        android:id="@+id/ruleRatingBar"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:stepSize="0.5"
+        android:layout_below="@+id/salogon_restaurants"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="3dp"
+        android:progressTint="@color/ratingBar"
+        android:backgroundTint="@color/ratingBar"
+        android:layout_toRightOf="@+id/profile_image_restaurant"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Asjad"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        android:textColor="@color/black"
+        android:id="@+id/reviewer_name_tv"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2 weeks ago"
+        android:textSize="12sp"
+
+        android:id="@+id/reviewer_time_tv"
+        android:layout_below="@+id/reviewer_name_tv"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Very Good Tast"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:id="@+id/reviewer_desc_tv"
+        android:textStyle="normal"
+        android:layout_below="@+id/reviewer_time_tv"
+        />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.7sp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorEditTextBG"
+        />
+
+</RelativeLayout>

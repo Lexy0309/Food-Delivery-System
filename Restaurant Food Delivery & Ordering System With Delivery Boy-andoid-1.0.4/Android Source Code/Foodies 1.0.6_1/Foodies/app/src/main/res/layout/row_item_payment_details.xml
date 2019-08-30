@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/payment_main_div"
+    android:background="@color/colorWhite"
+    android:layout_height="40dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/credit_card_number_tv"
+        android:text="**** **** **** **** 4242"
+       android:layout_centerVertical="true"
+        android:paddingLeft="15dp"
+        android:textColor="@color/black"
+        />
+
+    <ImageView
+        android:layout_width="45dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:paddingRight="15dp"
+        android:id="@+id/card_image"
+        android:layout_centerVertical="true"
+        android:src="@drawable/visa"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorEditTextBG"
+        android:layout_alignParentBottom="true"
+        />
+
+
+
+</RelativeLayout>

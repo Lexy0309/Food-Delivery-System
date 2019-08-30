@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/cart_main_container"
+    android:background="@color/colorBG">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:layout_height="55dp"
+        android:id="@+id/cart_header_div"
+        android:paddingLeft="5dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Cart"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/rastaurant_menu_item_title_tv"
+            android:textSize="15sp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingRight="50dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back_icon"
+            android:id="@+id/back_icon_cart_report" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Clear"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/cart_clear_tv"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:fontFamily="@font/verdana"
+            android:textSize="14sp"/>
+
+    </RelativeLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cart_header_div">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/report_order_list">
+
+    </ListView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="15dp"
+        android:background="@color/colorWhite"
+        android:id="@+id/add_payment_method_div"
+        android:layout_below="@+id/report_order_list"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Payment Method"
+            android:textColor="@color/colorEditTextBG"
+            android:layout_toRightOf="@+id/text_plus"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:id="@+id/text_plus"
+            android:textColor="@color/colorEditTextBG"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="15dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/colorWhite"
+        android:layout_below="@+id/add_payment_method_div"
+        android:id="@+id/delivery_address_div"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:id="@+id/text_plus2"
+            android:textColor="@color/colorEditTextBG"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Delivery Address"
+            android:textColor="@color/colorEditTextBG"
+            android:layout_toRightOf="@+id/text_plus2"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="15dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/colorWhite"
+        android:layout_below="@+id/delivery_address_div"
+        android:id="@+id/promo_div"
+        >
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:text="+"
+            android:id="@+id/promo_image"
+            android:textColor="@color/colorEditTextBG"
+            android:layout_centerVertical="true"
+            android:src="@drawable/promo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Promo Code"
+            android:textColor="@color/colorEditTextBG"
+            android:layout_toRightOf="@+id/promo_image"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"/>
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:background="@drawable/round_shape_btn_login"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="Send"
+            android:textColor="@color/colorWhite"
+            />
+
+            </RelativeLayout>
+
+            </RelativeLayout>
+        </ScrollView>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/round_shape_btn_login"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_margin="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Check Out"
+            android:layout_centerInParent="true"
+            android:textColor="@color/colorWhite"
+            />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
+
+</FrameLayout>

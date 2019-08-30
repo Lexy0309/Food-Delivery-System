@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Special Pizza X1"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15sp"
+        android:textSize="14sp"
+        android:id="@+id/menu_item_name_tv"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$ 5.00"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15sp"
+        android:textSize="14sp"
+        android:id="@+id/menu_item_amount_tv"/>
+
+</RelativeLayout>

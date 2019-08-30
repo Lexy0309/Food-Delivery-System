@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/user_frag_main_container"
+    android:background="@color/colorBG"
+    android:clickable="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    <android.support.percent.PercentRelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:layout_height="55dp"
+        android:paddingLeft="5dp"
+        android:id="@+id/toolbar_sign_in"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/account"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/title_city_tv"
+            android:textStyle="normal"
+            android:textSize="14sp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingRight="50dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back_icon"
+            android:visibility="gone"
+            android:id="@+id/back_icon_user_account" />
+
+
+    </android.support.percent.PercentRelativeLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:layout_below="@+id/toolbar_sign_in"
+    android:id="@+id/account_div"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ACCOUNT"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/or_color_name"
+        android:textSize="10sp"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorEditTextBG"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/user_not_log_in_div"
+        android:layout_below="@+id/account_div">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="15dp"
+        android:background="@color/colorWhite"
+        android:id="@+id/sign_in_div"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign In"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="15dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/colorWhite"
+        android:id="@+id/sign_up_div"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingLeft="15dp"
+            android:layout_marginTop="1dp"
+            android:paddingRight="15dp"
+            android:background="@color/colorWhite"
+            android:id="@+id/uan_div2"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/uan_txt"
+                android:layout_centerVertical="true"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                />
+
+
+        </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/colorWhite"
+        android:id="@+id/terms_div"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Terms of Use and Privacy Policy"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorEditTextBG"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/user_log_in_div"
+        android:background="@color/colorBG"
+        android:layout_below="@+id/account_div">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="2dp"
+            android:paddingRight="15dp"
+            android:background="@color/colorWhite"
+            android:id="@+id/user_name_div"
+            >
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Francsico Albie"
+            android:id="@+id/user_name"
+                android:textSize="12sp"
+            android:textColor="@color/black"
+                android:textStyle="normal"
+            />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Change your account information"
+                android:layout_below="@+id/user_name"
+                android:textSize="10sp"
+                android:textColor="@color/or_color_name"
+                android:layout_marginTop="2dp"
+
+                />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/right_arrow"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="2dp"
+            android:paddingRight="15dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/colorWhite"
+            android:id="@+id/payment_method_div"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Payment Method"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                android:id="@+id/payment_method"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add or edit Payment Method"
+                android:layout_below="@+id/payment_method"
+                android:textSize="10sp"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/or_color_name"
+                />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/right_arrow"
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="2dp"
+            android:paddingRight="15dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/colorWhite"
+            android:id="@+id/dilervery_address_div"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delivery Address"
+                android:id="@+id/delivery_address"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add or edit delivery address"
+                android:layout_below="@+id/delivery_address"
+                android:textSize="10sp"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/or_color_name"
+                />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/right_arrow"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:paddingLeft="15dp"
+            android:layout_below="@+id/toolbar_sign_in"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OTHER"
+                android:textSize="10sp"
+                android:textColor="@color/or_color_name"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="8dp"
+            android:paddingRight="15dp"
+            android:background="@color/colorWhite"
+            android:id="@+id/favourites_div"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Favourites"
+                android:id="@+id/favourite_tv"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                android:layout_centerVertical="true"
+                />
+
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/right_arrow"
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingLeft="15dp"
+            android:layout_marginTop="1dp"
+            android:paddingRight="15dp"
+            android:background="@color/colorWhite"
+            android:id="@+id/terms_condition_div"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Terms of Use and Privacy Policy"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingLeft="15dp"
+            android:layout_marginTop="1dp"
+            android:paddingRight="15dp"
+            android:background="@color/colorWhite"
+            android:id="@+id/change_password_div"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Change Password"
+                android:layout_centerVertical="true"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingLeft="15dp"
+            android:layout_marginTop="1dp"
+            android:paddingRight="15dp"
+            android:background="@color/colorWhite"
+            android:id="@+id/uan_div"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/uan_txt"
+                android:layout_centerVertical="true"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingLeft="15dp"
+            android:layout_marginTop="1dp"
+            android:paddingRight="15dp"
+            android:background="@color/colorWhite"
+            android:id="@+id/log_out_div"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Log Out"
+                android:layout_centerVertical="true"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    </RelativeLayout>
+
+
+</FrameLayout>

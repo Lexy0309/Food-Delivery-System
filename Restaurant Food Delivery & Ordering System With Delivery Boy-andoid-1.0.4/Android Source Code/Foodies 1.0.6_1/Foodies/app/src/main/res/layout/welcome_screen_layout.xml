@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/welcome_bg"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:id="@+id/welcome_show_restaurants_btn"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:background="@drawable/round_shape_btn_login"
+        android:text="@string/show_restaurant"
+        android:textColor="@color/colorWhite"
+        android:textSize="15sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_above="@+id/welcome_show_restaurants_btn"
+        android:id="@+id/welcome_search_div"
+        android:background="@drawable/search_background"
+        android:layout_marginBottom="15dp">
+
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/search_icon"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/welcome_search_icon"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/welcome_location_txt"
+            android:layout_toRightOf="@+id/welcome_search_icon"
+            android:layout_marginLeft="12dp"
+            android:singleLine="true"
+            android:layout_marginRight="12dp"
+            android:layout_centerVertical="true"
+            android:text="Kalma Chowk, Lahore"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:text="@string/welcome_txt"
+        android:textSize="17sp"
+        android:textColor="@color/black"
+        android:layout_above="@+id/welcome_search_div"
+        android:layout_marginBottom="15dp"
+        android:textAlignment="center"
+        />
+
+
+</RelativeLayout>

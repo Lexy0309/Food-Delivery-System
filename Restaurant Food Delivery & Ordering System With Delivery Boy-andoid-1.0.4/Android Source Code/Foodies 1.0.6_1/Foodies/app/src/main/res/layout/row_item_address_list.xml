@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:id="@+id/address_list_main_div"
+    android:background="@color/colorWhite">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorEditTextBG"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:id="@+id/address"
+        android:textColor="@color/colorBlack"
+        android:layout_marginLeft="15dp"
+        android:textSize="14sp"
+        android:maxLines="2"
+        android:singleLine="true"
+        android:layout_marginRight="15dp"
+        android:fontFamily="@font/verdana"
+        />
+
+    <!--<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:id="@+id/street"
+        android:textColor="@color/colorBlack"
+        android:layout_marginLeft="15dp"
+        android:textSize="14sp"
+        android:text="Street,"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:id="@+id/apart_ment"
+        android:layout_toRightOf="@+id/street"
+        android:text="Apartment,"
+        android:textColor="@color/colorBlack"
+        android:layout_marginLeft="2dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:id="@+id/city"
+        android:layout_toRightOf="@+id/apart_ment"
+        android:text="Apartment,"
+        android:textColor="@color/colorBlack"
+        android:layout_marginLeft="2dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:id="@+id/state"
+        android:layout_toRightOf="@+id/city"
+        android:text="Apartment"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:layout_marginRight="15dp"
+        android:textColor="@color/colorBlack"
+        android:layout_marginLeft="2dp"/>-->
+
+</RelativeLayout>

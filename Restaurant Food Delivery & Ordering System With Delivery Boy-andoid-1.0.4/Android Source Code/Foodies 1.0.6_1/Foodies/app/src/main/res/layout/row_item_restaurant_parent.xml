@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:id="@+id/mainDiv_Parent"
+    android:background="@color/lightBG"
+   >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="3dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title_name"
+        android:textSize="14sp"
+
+        android:text="Options"/>
+        <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/title_name"
+    android:id="@+id/sub_title_name"
+    android:textSize="10sp"
+    android:textColor="@color/colorDeal"
+    android:text="Office Time"/>
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorEditTextBG"
+        android:alpha="0.6"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

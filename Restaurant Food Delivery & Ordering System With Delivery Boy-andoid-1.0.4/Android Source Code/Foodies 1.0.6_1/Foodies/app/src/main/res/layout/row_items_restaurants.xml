@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="105dp"
+android:id="@+id/restaurant_row_main"
+xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<ImageView
+    android:layout_height="40dp"
+    android:layout_width="40dp"
+    android:src="@drawable/featured"
+    android:id="@+id/featured"/>
+
+<android.support.percent.PercentRelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="125dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image_restaurant"
+        android:layout_width="76dp"
+        android:layout_height="76dp"
+        android:src="@drawable/ic_launcher_background"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#00ffffff"
+        app:layout_marginTopPercent = "10%"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.0KM"
+        android:textSize="10sp"
+        app:layout_marginLeftPercent = "6%"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/profile_image_restaurant"
+        android:id="@+id/distanse_restaurants"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Options"
+        android:textSize="14sp"
+        android:layout_toLeftOf="@+id/favorite_icon"
+        app:layout_marginTopPercent = "10%"
+        app:layout_marginLeftPercent = "3%"
+        android:id="@+id/title_restaurants"
+        android:layout_toRightOf="@+id/profile_image_restaurant"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Options"
+        android:textSize="12sp"
+        android:id="@+id/salogon_restaurants"
+        android:layout_below="@+id/title_restaurants"
+        app:layout_marginLeftPercent = "3%"
+        android:layout_marginTop="2dp"
+        android:maxLines="1"
+        android:layout_toRightOf="@+id/profile_image_restaurant"
+        android:layout_toLeftOf="@+id/favorite_icon"
+        />
+
+    <RatingBar
+        android:id="@+id/ruleRatingBar"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:stepSize="0.5"
+        android:layout_below="@+id/salogon_restaurants"
+        app:layout_marginLeftPercent = "3%"
+        android:layout_marginTop="2dp"
+        android:progressTint="@color/ratingBar"
+        android:backgroundTint="@color/ratingBar"
+        android:layout_toRightOf="@+id/profile_image_restaurant"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+
+    <!--      <ImageView
+              android:layout_height="22dp"
+              android:layout_width="22dp"
+              android:layout_below="@+id/ruleRatingBar"
+              android:layout_marginRight="7dp"
+              android:layout_marginLeft="10dp"
+              android:id="@+id/baked_time_img"
+              android:layout_toRightOf="@+id/profile_image_restaurant"
+              android:src="@drawable/service_fee_icon"/>-->
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/ruleRatingBar"
+        android:id="@+id/item_time_tv"
+        android:singleLine="true"
+        android:layout_toLeftOf="@+id/baked_icon"
+        android:layout_toRightOf="@+id/profile_image_restaurant"
+        android:text="$30"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:textSize="12sp"
+
+        />
+
+    <!--  <TextView
+          android:layout_height="wrap_content"
+          android:layout_width="wrap_content"
+          android:layout_below="@+id/item_time_tv"
+          android:id="@+id/item_price_per_mile"
+          android:text="$30"
+          android:layout_toRightOf="@+id/profile_image_restaurant"
+          android:layout_marginTop="3dp"
+          android:layout_marginLeft="10dp"
+          android:textSize="10sp"
+
+          />-->
+
+
+    <ImageView
+        android:layout_height="39dp"
+        android:layout_width="39dp"
+        android:padding="8dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/favorite_icon"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="-8dp"
+        android:src="@drawable/heart_not_fill"
+
+        />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_marginTopPercent = "52%"
+        android:id="@+id/item_delivery_time_tv"
+        android:layout_alignParentRight="true"
+        android:text="$30"
+        android:textSize="12sp"
+
+        />
+
+    <ImageView
+        android:layout_height="22dp"
+        android:layout_width="22dp"
+        app:layout_marginTopPercent = "48%"
+        android:layout_marginRight="7dp"
+        android:layout_toLeftOf="@+id/item_delivery_time_tv"
+        android:id="@+id/service_icon"
+        android:src="@drawable/service_fee_icon"/>
+
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_marginTopPercent = "73%"
+        android:id="@+id/baked_time_tv"
+        android:layout_alignParentRight="true"
+        android:text="$30"
+        android:textSize="12sp"
+
+        />
+
+    <ImageView
+        android:layout_height="22dp"
+        android:layout_width="22dp"
+        android:layout_marginRight="7dp"
+        android:layout_toLeftOf="@+id/baked_time_tv"
+        android:id="@+id/baked_icon"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/service_icon"
+        android:src="@drawable/baking"/>
+
+</android.support.percent.PercentRelativeLayout>
+
+<View
+    android:layout_width="fill_parent"
+    android:layout_height="1dp"
+    android:layout_alignParentBottom="true"
+    android:background="@color/colorEditTextBG" />
+
+
+
+</RelativeLayout>
+

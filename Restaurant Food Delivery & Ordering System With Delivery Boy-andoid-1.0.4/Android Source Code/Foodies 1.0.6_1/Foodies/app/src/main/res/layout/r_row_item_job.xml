@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/r_job_main"
+    android:background="@color/colorWhite"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="Sariyas"
+            android:id="@+id/r_hotel_name"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/r_order_number"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:textSize="13sp"
+            android:layout_marginTop="7dp"
+            android:textColor="@color/black"
+            android:id="@+id/r_order_number"
+            android:text="Order # 10"/>
+
+        <!--   <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="15dp"
+               android:layout_below="@+id/r_hotel_name"
+               android:text="Gulistan Colony FSB"
+               android:id="@+id/r_order_address"
+               android:textSize="13sp"
+               android:textColor="@color/black"/>-->
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:text="$276.00"
+            android:textSize="13sp"
+            android:id="@+id/r_total_bil_tv"
+            android:textColor="@color/black"
+            android:layout_marginTop="7dp"
+            />
+
+        <!--  <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginRight="15dp"
+              android:layout_alignParentRight="true"
+              android:layout_centerVertical="true"
+              android:layout_above="@+id/r_total_bil_tv"
+              android:text="Credit Card"
+              android:id="@+id/card_detail_tv"
+              android:textColor="@color/black"
+              android:textSize="13sp"/>-->
+
+        <!--<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="12:16 PM"
+            android:layout_below="@+id/r_total_bil_tv"
+            android:textColor="@color/black"
+            android:id="@+id/time_tv"
+            android:textSize="13sp"/>-->
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="7dp"
+            android:text="ACCEPT"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            android:id="@+id/accept_btn"
+            android:layout_below="@+id/r_hotel_name"
+            android:background="@drawable/round_shape_btn_login"
+            android:textColor="@color/colorWhite"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/accept_btn"
+            android:layout_marginTop="7dp"
+            android:background="@color/colorEditTextBG"/>
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

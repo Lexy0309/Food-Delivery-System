@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:background="@color/colorWhite"
+    android:id="@+id/order_item_main_div">
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+       android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="2dp">
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/deal_name"
+            android:text="New 1 Section Name"
+            android:textSize="14sp"
+            android:textColor="@color/black"/>
+
+
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/hotal_name_tv"
+            android:layout_below="@+id/deal_name"
+            android:text="Options"
+            android:textSize="12sp"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/colorDeal"/>
+<!--
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/order_quantity"
+            android:layout_below="@+id/hotal_name_tv"
+            android:text="New 1 Section Name"
+            android:textSize="12sp"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/colorDeal"/>-->
+
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/order_number"
+            android:textSize="12sp"
+            android:layout_below="@+id/hotal_name_tv"
+            android:text="New 1 Section Name"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/colorDeal"/>
+
+        <ImageView
+            android:layout_height="18dp"
+            android:layout_width="42dp"
+            android:id="@+id/deal_img"
+            android:layout_marginTop="2dp"
+            android:layout_below="@+id/order_number"
+            android:src="@drawable/deal_img"/>
+
+
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/date_deal_tv"
+            android:layout_alignParentRight="true"
+            android:text="0000-00-00"
+            android:textSize="12sp"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/colorDeal"
+            />
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/time_deal_tv"
+            android:layout_alignParentRight="true"
+            android:text="0000-00-00"
+            android:textSize="12sp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/date_deal_tv"
+            android:textColor="@color/colorDeal"
+            />
+
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/price_deal_tv"
+            android:layout_alignParentRight="true"
+            android:text = "$20"
+            android:layout_below="@+id/time_deal_tv"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorRed"
+            />
+
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/track_tv"
+            android:layout_alignParentRight="true"
+            android:text = "Track Now"
+            android:layout_below="@+id/price_deal_tv"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorRed"
+            />
+
+    </android.support.percent.PercentRelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorEditTextBG" />
+
+</RelativeLayout>

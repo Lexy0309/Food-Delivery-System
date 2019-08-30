@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/row_item_deal_main"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/featured_img"
+            android:src="@drawable/featured"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/deals_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_launcher_background"
+            app:civ_border_width="2dp"
+            android:layout_marginLeft="15dp"
+            app:civ_border_color="#00ffffff"
+            android:layout_centerVertical="true"
+
+            />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/deal_name"
+            android:text="New 1 Section Name"
+            android:textSize="14sp"
+            android:layout_marginLeft="5dp"
+            app:layout_marginTopPercent="19%"
+            android:layout_toRightOf="@+id/deals_image"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/hotal_name_tv"
+            android:layout_below="@+id/deal_name"
+            android:layout_toRightOf="@+id/deals_image"
+            android:text="Options"
+            android:textSize="12sp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/colorDeal"/>
+
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/date_deal_tv"
+            android:layout_alignParentRight="true"
+            android:text="0000-00-00"
+            android:layout_marginRight="15dp"
+            app:layout_marginTopPercent="15%"
+            android:textColor="@color/colorDeal"
+            />
+
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/per_km_deal_tv"
+            android:layout_toRightOf="@+id/deals_image"
+            android:text = "$20"
+            android:layout_below="@+id/hotal_name_tv"
+            android:textSize="12dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/colorDeal"
+            />
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/price_deal_tv"
+            android:layout_marginRight="15dp"
+            android:text = "$20"
+            android:layout_below="@+id/hotal_name_tv"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/colorRed"
+            />
+
+    </android.support.percent.PercentRelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="bottom"
+        android:background="@color/colorEditTextBG" />
+
+</LinearLayout>

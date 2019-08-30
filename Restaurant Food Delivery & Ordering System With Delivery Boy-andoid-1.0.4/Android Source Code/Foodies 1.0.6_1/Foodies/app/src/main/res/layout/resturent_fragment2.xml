@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
+    android:id="@+id/restaurent_main_layout">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/percentLayout"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:layout_height="55dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:id="@+id/res_filter"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/res_filter"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text=""
+            android:id="@+id/title_city_tv"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:maxLength="30"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp"/>
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            app:layout_marginTopPercent = "40%"
+            android:layout_toRightOf="@+id/title_city_tv"
+            android:layout_toLeftOf="@+id/order_place"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/drop_down_arrow"
+            app:layout_marginRightPercent="10%"
+            />
+
+
+    </android.support.percent.PercentRelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/searchlayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/percentLayout"
+        android:focusableInTouchMode="true">
+    <android.support.v7.widget.SearchView
+        android:id="@+id/floating_search_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:defaultQueryHint="Some Text Here"
+        app:queryHint="Search Restaurant"
+        android:textSize="12sp"
+        app:iconifiedByDefault="false"
+        android:paddingLeft="-10dp"
+        android:paddingStart="-10dp"
+        app:theme="@style/AppSearchView"
+        app:searchIcon="@drawable/search_icon"
+        android:queryBackground="@android:color/transparent"
+        android:focusableInTouchMode="true"/>
+    </LinearLayout>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/searchlayout">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycler_view_restaurant">
+        <android.support.percent.PercentRelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/restaurant_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            </android.support.percent.PercentRelativeLayout>
+    </RelativeLayout>
+
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/transparent_layer"
+        android:visibility="gone"
+        android:background="@color/transparent_tint">
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:id="@+id/progressDialog"
+        android:background="@drawable/round_shape_dialog_white"
+        >
+    <com.gmail.samehadar.iosdialog.CamomileSpinner
+        android:id="@+id/restaurantProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:spinnerColor="@color/colorRed"
+        app:clockwise="true"
+        />
+    </RelativeLayout>
+<!--
+    <ProgressBar
+
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       >
+    </ProgressBar>-->
+
+</FrameLayout>

@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorWhite"
+    android:id="@+id/resaurant_menu_items_main_layout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:layout_height="55dp"
+        android:paddingLeft="5dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Options"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/rastaurant_menu_item_title_tv"
+            android:textSize="15sp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingRight="50dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back_icon"
+            android:id="@+id/back_icon_menu_option" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:paddingRight="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/info_img"
+            android:id="@+id/about_icon" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <android.support.v7.widget.SearchView
+            android:id="@+id/floating_search_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            app:searchIcon="@drawable/search_icon"
+            app:iconifiedByDefault="false"
+            android:paddingLeft="-10dp"
+            android:paddingStart="-10dp"
+            android:queryBackground="@android:color/transparent"
+
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:id="@+id/suggestion_div">
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:id="@+id/close_suggestion"
+            android:visibility="gone"
+            android:src="@android:drawable/ic_menu_close_clear_cancel">
+
+        </ImageView>
+
+    </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:weightSum="2"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.3"
+            android:id="@+id/upper_header">
+
+            <android.support.percent.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="177dp"
+                android:background="@color/img_bg"
+                >
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/cover_image"/>
+            </android.support.percent.PercentRelativeLayout>
+
+            <android.support.percent.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="177dp"
+                android:background="@color/transparentColor">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/restaurant_image"
+                    android:layout_width="86dp"
+                    android:layout_height="86dp"
+                    android:src="@drawable/ic_launcher_background"
+                    app:civ_border_width="2dp"
+                    android:layout_centerHorizontal="true"
+                    app:civ_border_color="#00ffffff"
+                    app:layout_marginTopPercent="5%"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/restaurant_image"
+                    android:textColor="@color/colorWhite"
+                    android:text="Options"
+                    android:layout_marginTop="3dp"
+                    android:id="@+id/restaurant_name_tv"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/salogon_tv"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/restaurant_name_tv"
+                    android:text="Taste"
+                    android:textSize="12sp"
+                    android:layout_marginTop="3dp"
+                    android:textColor="@color/colorWhite"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/miles_desc_tv"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/salogon_tv"
+                    android:text="Taste"
+                    android:textSize="12sp"
+                    android:layout_marginTop="3dp"
+                    android:textColor="@color/colorWhite"
+                    />
+
+                <android.support.v7.widget.AppCompatRatingBar
+                    android:id="@+id/rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:rating="3"
+                    android:stepSize="0.5"
+                    android:progressTint="@color/ratingBar"
+                    android:secondaryProgressTint="@android:color/white"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/miles_desc_tv"
+                    android:layout_marginTop="3dp"
+                    style="?android:attr/ratingBarStyleSmall"
+
+                    />
+
+            </android.support.percent.PercentRelativeLayout>
+
+
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:visibility="gone"
+                android:id="@+id/rest_open_div"
+                android:background="@color/colorRed">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rest_not_open"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/colorWhite"
+                    android:fontFamily="@font/verdana"
+                    android:textSize="12sp"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:weightSum="2"
+                android:id="@+id/about_div"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/about_restaurant_div">
+
+                    <TextView
+                        android:layout_width="2dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:background="@color/colorEditTextBG"
+                        android:backgroundTint="@color/colorEditTextBG"
+                        android:layout_alignParentRight="true"
+                        />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Deals"
+                        android:textSize="14sp"
+                        android:layout_centerInParent="true"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/review_restaurant_div">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Reviews"
+                        android:textSize="14sp"
+                        android:layout_centerInParent="true"
+                        />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:visibility="gone"
+                android:background="@color/colorEditTextBG"
+                android:id="@+id/suggestion_txt">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Suggestions"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/verdana"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tab_menu_layout"
+                android:visibility="gone">
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/menu_tab"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    app:tabMode="scrollable"
+                    app:tabTextColor="@color/dark_gray"
+                    app:tabSelectedTextColor="@color/colorPrimaryDark"
+                    app:tabGravity="fill"
+                    app:tabTextAppearance="@style/MineCustomTabText2"
+                    app:tabPaddingStart="10dp"
+                    app:tabPaddingEnd="10dp"
+                    app:tabIndicatorHeight="5dp"
+                    android:layout_marginLeft="-1dp"
+                    app:tabIndicatorColor="@color/colorPrimaryDark"/>
+
+                <android.support.v4.view.ViewPager
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/viewpager"
+                    android:layout_marginBottom="45dp"
+                    android:layout_below="@+id/menu_tab">
+
+                </android.support.v4.view.ViewPager>
+
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/list_menu_layout"
+                android:visibility="gone">
+
+                <com.dinosoftlabs.foodies.android.Utils.CustomExpandableListView
+                    android:id="@+id/restaurant_menu_item_list"
+                    android:layout_width="match_parent"
+                    android:divider="@null"
+                    android:dividerHeight="0dp"
+                    android:layout_height="match_parent" />
+
+                <com.dinosoftlabs.foodies.android.Utils.CustomExpandableListView
+                    android:id="@+id/restaurant_menu_item_list_suggestion"
+                    android:layout_width="match_parent"
+                    android:divider="@null"
+                    android:dividerHeight="0dp"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/transparent_layer"
+        android:visibility="gone"
+        android:background="@color/transparent_tint">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:id="@+id/progressDialog"
+        android:background="@drawable/round_shape_dialog_white"
+        >
+        <com.gmail.samehadar.iosdialog.CamomileSpinner
+            android:id="@+id/res_menu_item_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            app:spinnerColor="@color/colorRed"
+            />
+    </RelativeLayout>
+
+</FrameLayout>

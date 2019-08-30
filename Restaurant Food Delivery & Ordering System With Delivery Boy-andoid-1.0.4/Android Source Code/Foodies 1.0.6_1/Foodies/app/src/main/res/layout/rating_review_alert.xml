@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorWhite">
+
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:layout_height="55dp"
+        android:id="@+id/menu_item_div"
+        android:paddingLeft="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Give Your Reviews"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/cart_title_tv"
+            android:textSize="15sp"/>
+
+        <ImageView
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/close"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:padding="5dp"
+            android:id="@+id/clos_menu_items_detail" />
+
+    </RelativeLayout>
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/menu_item_div">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            app:layout_widthPercent="40%"
+            app:layout_heightPercent="40%"
+            app:layout_marginTopPercent="2%"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/unknown_img"
+            android:id="@+id/rest_img">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/rest_img"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/rest_name"
+            android:text="Hilton"
+            android:layout_marginTop="-20dp"
+            android:textSize="18sp"
+            />
+
+        <RatingBar
+            android:id="@+id/reviewRatingBar"
+            android:numStars="5"
+            android:stepSize="1"
+            android:isIndicator="false"
+            android:layout_below="@+id/rest_name"
+            android:layout_centerHorizontal="true"
+            android:progressTint="@color/ratingBar"
+            android:backgroundTint="@color/ratingBar"
+            android:layout_toRightOf="@+id/profile_image_restaurant"
+            style="?android:attr/ratingBarStyle"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            android:layout_marginTop="-10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            app:layout_heightPercent="30%"
+            android:layout_below="@+id/reviewRatingBar"
+            android:layout_marginTop="-20dp"
+            android:id="@+id/code_div">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="15dp"
+                android:background="@drawable/edit_text_border"
+                android:id="@+id/ed_message"
+                android:imeOptions="actionDone"
+                android:hint="Type Review (Optional)"
+                android:gravity="top"
+                android:inputType="text"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorEditTextBG"
+                android:textSize="16sp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/round_shape_btn_login"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:id="@+id/submitBtn"
+            android:layout_margin="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:layout_centerInParent="true"
+                android:textColor="@color/colorWhite"
+                />
+
+
+        </RelativeLayout>
+
+    </android.support.percent.PercentRelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/transparent_layer"
+        android:visibility="gone"
+        android:background="@color/transparent_tint">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/progressDialog"
+        android:visibility="gone"
+        android:background="@drawable/round_shape_dialog_white"
+        >
+        <com.gmail.samehadar.iosdialog.CamomileSpinner
+            android:id="@+id/addToCartProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            app:spinnerColor="@color/colorRed"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

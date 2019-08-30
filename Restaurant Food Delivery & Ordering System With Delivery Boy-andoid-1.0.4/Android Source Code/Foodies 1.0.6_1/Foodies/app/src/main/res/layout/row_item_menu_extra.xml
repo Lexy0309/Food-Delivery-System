@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:background="@color/colorBG">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1 x Small x $2"
+        android:layout_marginLeft="15sp"
+        android:layout_centerVertical="true"
+        android:textSize="12sp"
+        android:id="@+id/menu_item_extra_tv"/>
+
+
+</RelativeLayout>

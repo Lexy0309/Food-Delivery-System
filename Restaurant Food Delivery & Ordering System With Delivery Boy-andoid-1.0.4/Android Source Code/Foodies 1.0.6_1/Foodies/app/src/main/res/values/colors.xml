@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#BE2C2C</color>
+    <color name="colorPrimaryDark">#BE2C2C</color>
+    <color name="colorAccent">#be2c2c</color>
+    <color name="colorWhite">#ffffff </color>
+    <color name="colorBlack">#000000</color>
+    <color name="lightBG">#FFF5F5F5</color>
+    <color name="colorBG">#EBEBEB</color>
+    <color name="colorEditTextBG">#dddddd</color>
+    <color name="colorTabIcon">#d2d1d1</color>
+    <color name="colorDeal">#aaaaaa</color>
+    <color name="transparentColor">#7f000000</color>
+    <color name="colorRed">#be2c2c</color>
+    <color name="trackColor">#83dc8585</color>
+    <color name="colorFB">#3b5998 </color>
+    <color name="colorGoogle">#d34836</color>
+    <color name="ratingBar">#F7CA41</color>
+    <color name="text_alpha">#aaffffff</color>
+    <color name="dialog_clr">#96e1e0e0</color>
+    <color name="or_color_name">#636262</color>
+    <color name="img_bg">#EBEBEB</color>
+    <color name="transparent_tint">#47000000</color>
+
+    <color name="colorRouteLine">#be2c2c</color>
+
+
+</resources>

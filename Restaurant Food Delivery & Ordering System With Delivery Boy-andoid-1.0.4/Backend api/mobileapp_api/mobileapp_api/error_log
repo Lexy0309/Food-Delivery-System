@@ -1,0 +1,2 @@
+[21-Mar-2019 13:03:53 Asia/Karachi] PHP Fatal error:  Call to undefined function convert_from_latin1_to_utf8_recursively() in /home/bring/public_html/foodies/mobileapp_api7/app/Controller/ApiController.php on line 1791
+[21-Mar-2019 13:04:10 Asia/Karachi] PHP Fatal error:  Call to undefined method Lib::convert_from_latin1_to_utf8_recursively() in /home/bring/public_html/foodies/mobileapp_api7/app/Controller/ApiController.php on line 1791
